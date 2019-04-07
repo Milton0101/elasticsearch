@@ -49,7 +49,8 @@ Vagrant.configure(2) do |config|
     rpm_common config
   end
   config.vm.define "centos-7" do |config|
-    config.vm.box = "elastic/centos-7-x86_64"
+    #config.vm.box = "elastic/centos-7-x86_64"
+    config.vm.box="centos7"
     rpm_common config
   end
   config.vm.define "oel-6" do |config|
